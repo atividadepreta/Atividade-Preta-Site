@@ -383,17 +383,17 @@ function configurarEnvioFormulario(nomeDoForm, scriptURL) {
   // Forms ANTIGOS (funcionam como antes)
   configurarEnvioFormulario(
     'formulario-contato',
-    'https://script.google.com/macros/s/AKfycbx3C65U50bRO6vETRXRdbxHGiQ0cbjNaMf9SIkAR6QjLliv1ORHdA76B7TN2Q5TWe-leA/exec'
+    'https://script.google.com/macros/s/AKfycbzEIhkSbkVeoYd0_1AxGUH3Tu8DnB1CR3zUI56F5tGeFyEJejX2HQf3o1hJOHW1rU-VXQ/exec'
   );
   
   configurarEnvioFormulario(
     'formulario-indicacao',
-    'https://script.google.com/macros/s/AKfycbwG9fMvLFRHABUJcFQXcO-WA-Ej-VWg7oaKGS3XDZ5opzMOvwy2_3lvfA3QHZycso5L/exec'
+    'https://script.google.com/macros/s/AKfycbw5M1YwrgDz-KBmHy5ZieEb4g4RHIOKD-_HaqLRwSNVCwEQOirjAQlSSj0JMaCdHj12/exec'
   );
   
   configurarEnvioFormulario(
     'form-fale-conosco',
-    'https://script.google.com/macros/s/AKfycbxhBGXUw8J7p2O_4LE120S54To6RxT5JE8B6GeHeXgmTiR6G1ta4LIB1tpa1boB8NC8jQ/exec'
+    'https://script.google.com/macros/s/AKfycbzMN1GPE9tEhlrv7d_t39ZmTtaeeXtOUE0FXJBGXBWNmneIOZo3w0I3jeEKOMeOYMxiww/exec'
   );
   
 
