@@ -1551,7 +1551,7 @@ header nav.nav-mobile ul li {
 }
  /* VERSÃO DESKTOP DO ESTÁTICO */
 .section-carousel {
-  display: flex;
+  display: none; /*  display: flex; */
   width: 100%;
   height: 234px;
   justify-content: center;
@@ -2220,7 +2220,7 @@ header nav.nav-mobile ul li {
 /* VERSÃO MOBILE SECTION 7 */
   .section-7 {
     min-height: 234px;
-    display: block;
+    display: none; /*    para quando ativar: display: block;*/ 
   }
 
   /* VERSÃO MOBILE DO ESTÁTICO */
@@ -2415,7 +2415,7 @@ header nav.nav-mobile ul li {
   /* section 7 da versão TABLET*/
   .section-7 {
     padding: 6% 8%;
-    display: block;
+    display: none; /*   display: block; */
   }
 
 
