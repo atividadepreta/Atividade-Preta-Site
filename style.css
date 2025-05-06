@@ -74,11 +74,6 @@ nav a {
   padding-top: 80px;
 }
 
-/* Altura da seção 6 ajustada */
-.section-7 {
-  height: 234px;
-}
-
 /* Cores diferentes por seção (exemplo visual) */
 .section-2,
 .section-4,
@@ -568,7 +563,9 @@ button {
   height: 20px;
 }
 
+/* Versão DESKTOP */
 .section-7 {
+  height: 234px;
   padding: 40px 0;
   display: none;
 }
@@ -1552,7 +1549,7 @@ header nav.nav-mobile ul li {
   position: absolute;
 
 }
-
+ /* VERSÃO DESKTOP DO ESTÁTICO */
 .section-carousel {
   display: flex;
   width: 100%;
@@ -2220,12 +2217,13 @@ header nav.nav-mobile ul li {
     background-color: red;
 
   }
-
+/* VERSÃO MOBILE SECTION 7 */
   .section-7 {
     min-height: 234px;
     display: block;
   }
 
+  /* VERSÃO MOBILE DO ESTÁTICO */
   .section-carousel {
     display: none;
   }
@@ -2407,13 +2405,19 @@ header nav.nav-mobile ul li {
 
   }
 
-  /* SECTION 5, 6, 7 */
+  /* SECTION 5, 6 */
   .section-5,
-  .section-6,
+  .section-6 {
+    padding: 6% 8%;
+    display: block;
+  }
+
+  /* section 7 da versão TABLET*/
   .section-7 {
     padding: 6% 8%;
     display: block;
   }
+
 
 
   /* LOGO */
@@ -2437,7 +2441,8 @@ header nav.nav-mobile ul li {
     height: 35px;
     margin-top: 15px;
   }
-
+ 
+  /* VERSÃO ESTÁTICA DO TABLET*/
   .section-carousel {
     display: none;
   }
