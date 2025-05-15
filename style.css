@@ -185,6 +185,7 @@ nav a {
 }
 
 .section-sobre {
+  color: rgba(48, 48, 48, 1);
   position: relative;
   background-color: #DED6CFBF;
   height: 2600px;
