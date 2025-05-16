@@ -534,3 +534,15 @@ function abrirInstagram(event) {
 
   document.addEventListener('visibilitychange', handleVisibilityChange);
 }
+
+document.querySelectorAll('a[href="#formulario-modal"]').forEach(link => {
+  link.addEventListener('click', function () {
+    const opcao = this.dataset.opcao;
+    if (opcao) {
+      const select = document.getElementById('comunidade-select');
+      if (select) {
+        select.value = opcao;
+      }
+    }
+  });
+});

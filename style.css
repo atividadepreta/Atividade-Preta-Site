@@ -1646,6 +1646,7 @@ header nav.nav-mobile ul li {
   text-underline-offset: 6px; /* diatancia entre texto e underline*/
   text-decoration-thickness: 2px; /* espessura mais fina */
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .paragrafo-sobre, .paragrafo-sobre-esquerda, .lista-sobre, .links-sobre-1, .links-sobre-2, .paragrafo-abaixo-imagem {
@@ -1711,6 +1712,7 @@ header nav.nav-mobile ul li {
   letter-spacing: 14%;
   line-height: 150%;
   color: rgba(47, 112, 222, 1);
+  cursor: pointer;
 }
 
 .primeiro-link, .segundo-link, .terceiro-link {
