@@ -45,9 +45,18 @@ main {
 
 .sobre-body {
   background-image: url('src/img/testefundo.png');
-  background-size: cover;
-  
+  background-size: cover; 
 
+}
+.links-body {
+  background-image: url('src/img/fundo-links.png');
+  background-size: cover; 
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 body {
   font-weight: 400;
@@ -1729,6 +1738,96 @@ header nav.nav-mobile ul li {
   text-decoration: underline;
   text-underline-offset: 6px; /* diatancia entre texto e underline*/
   text-decoration-thickness: 1px; /* espessura mais fina */
+}
+
+/* LINKS INDEX.HTML */
+
+.logo-links {
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+.logo-links img {
+  width: 140px;
+  box-shadow: 5px 8px 12px rgba(22, 22, 22, 0.4);
+}
+.titulo-links {
+  font-family: 'questrial', sans-serif;
+  width: 100%;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.subtitulo-links {
+  font-family: 'inconsolata', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.desc {
+  font-family: 'inconsolata', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 100%;
+}
+.links-botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 392px;
+  margin-bottom: 30px;
+}
+.link-btn {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-left: 40px;
+  background: #35322f;
+  color: rgba(222, 214, 207, 1);
+  border: none;
+  padding: 18px 24px;
+  font-size: 1rem;
+  font-family: 'inconsolata', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 4px 4px 4px rgba(48, 48, 48, 0.4);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  gap: 16px;
+  text-align: center;
+
+}
+.link-btn:hover {
+  background: #222;
+
+  transform: translateY(2px);
+}
+
+.link-btn .icon {
+  position: absolute;
+  left: 10px; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon {
+
+  width: 28px;
+  text-align: center;
+}
+
+.footer-logo-links {
+  margin-top: 4px;
+  color: #35322f;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.7;
 }
 
 
