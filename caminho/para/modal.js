@@ -1,11 +1,13 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     // Elementos dos modais
     const modalCadastro = document.getElementById('formulario-modal');
+    const modalCadastroOpcaoAliado = document.getElementById('formulario-modal-opcao-aliado');
+    const modalCadastroOpcaoAliante = document.getElementById('formulario-modal-opcao-aliante');
     const modalIndicacao = document.getElementById('modal-indicacao');// NOVO
-    const modalNovo = document.getElementById('id-do-novo-modal');
     const modalConfirmacao = document.getElementById('modal-confirmacao');
     const formCadastro = document.getElementById('granulado');
+    const formCadastroOpcaoAliado = document.getElementById('granulado-opcao-aliado');  
+    const formCadastroOpcaoAliante = document.getElementById('granulado-opcao-aliante');
     const formIndicacao = document.getElementById('form-indicacao');
     const modalConfirmacao2 = document.getElementById('modal-confirmacao-2');
     const formConfirmacao2 = document.getElementById('form-confirmacao-2');
@@ -74,15 +76,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     formIndicacao.addEventListener('submit', function(e) {
         e.preventDefault();
-    
-
-
-    
         // Fecha o modal de indicação
-        fecharModal(modalCadastro);
-        fecharModal(document.getElementById('modal-indicacao'));
-        abrirModal(modalMuitoObrigado2); // Modal para ALIADOS
-        // Limpa o formulário
+        fecharModal(modalIndicacao); // Apenas fecha o modal de indicação
+        abrirModal(modalMuitoObrigado2); // Modal para agradecimento
         formIndicacao.reset();
     });
     
@@ -137,6 +133,21 @@ function fecharModal(modal) {
         });
     });
     
+    // ABRIR MODAL CADASTRO OPÇÃO ALIADO
+    document.querySelectorAll('.abrir-form-cadastro-opcao-aliado').forEach(botao => {
+        botao.addEventListener('click', function() {
+            formCadastro.reset();
+            abrirModal(modalCadastroOpcaoAliado);
+        });
+    });
+
+    // ABRIR MODAL CADASTRO OPÇÃO ALIANTE
+    document.querySelectorAll('.abrir-form-cadastro-opcao-aliante').forEach(botao => {
+        botao.addEventListener('click', function() {
+            formCadastro.reset();
+            abrirModal(modalCadastroOpcaoAliante);
+        });
+    });
 
     // ABRIR MODAL FORM FINALf Form-fale-conosco
     document.querySelectorAll('.fale-conosco').forEach(botao => {
@@ -145,10 +156,10 @@ function fecharModal(modal) {
       });
     });
 
-    // ABRIR MODAL INDICAÇÃO (NOVO!)
+    // ABRIR MODAL INDICAÇÃO 
     document.querySelectorAll('.abrir-modal-indicacao').forEach(botao => {
         botao.addEventListener('click', function() {
-  
+        fecharModal(modalConfirmacao);
         abrirModal(modalIndicacao);
     })
     });
@@ -187,10 +198,6 @@ function fecharModal(modal) {
             comunidade.focus();
             return;
         }
-
-    // Fecha o modal de cadastro
-    
-
     // Abre o modal correspondente
     if (comunidade.value === 'ALIADO') {
         fecharModal(modalCadastro); 
@@ -199,8 +206,23 @@ function fecharModal(modal) {
         fecharModal(modalCadastro); 
         abrirModal(modalConfirmacao); // Modal para ALIADOS
     }
+
+
     });
 
+    // SUBMISSÃO DO CADASTRO OPÇÃO ALIADO
+    formCadastroOpcaoAliado.addEventListener('submit', function(e) {
+        e.preventDefault();
+        fecharModal(modalCadastroOpcaoAliado);
+        abrirModal(modalConfirmacao2); // Modal para ALIADOS
+    });
+
+    // SUBMISSÃO DO CADASTRO OPÇÃO ALIANTE
+    formCadastroOpcaoAliante.addEventListener('submit', function(e) {
+        e.preventDefault();
+        fecharModal(modalCadastroOpcaoAliante);
+        abrirModal(modalConfirmacao); // Modal para ALIANTES
+    });
 
  /*    // SUBMISSÃO DA INDICAÇÃO (validação básica)
     formIndicacao.addEventListener('submit', function(e) {
@@ -233,6 +255,9 @@ function fecharModal(modal) {
 // ---------------------------
 // CARREGAR ESTADOS E CIDADES
 // ---------------------------
+
+
+
 
 let dadosEstados = [];
 
@@ -397,6 +422,17 @@ function configurarEnvioFormulario(nomeDoForm, scriptURL) {
   );
   
   configurarEnvioFormulario(
+    'formulario-contato-opcao-aliado',
+    'https://script.google.com/macros/s/AKfycbzEIhkSbkVeoYd0_1AxGUH3Tu8DnB1CR3zUI56F5tGeFyEJejX2HQf3o1hJOHW1rU-VXQ/exec'
+  );
+
+  configurarEnvioFormulario(
+    'formulario-contato-opcao-aliante',
+    'https://script.google.com/macros/s/AKfycbzEIhkSbkVeoYd0_1AxGUH3Tu8DnB1CR3zUI56F5tGeFyEJejX2HQf3o1hJOHW1rU-VXQ/exec'
+  );
+  
+
+  configurarEnvioFormulario(
     'formulario-indicacao',
     'https://script.google.com/macros/s/AKfycbw5M1YwrgDz-KBmHy5ZieEb4g4RHIOKD-_HaqLRwSNVCwEQOirjAQlSSj0JMaCdHj12/exec'
   );
@@ -535,14 +571,3 @@ function abrirInstagram(event) {
   document.addEventListener('visibilitychange', handleVisibilityChange);
 }
 
-document.querySelectorAll('a[href="#formulario-modal"]').forEach(link => {
-  link.addEventListener('click', function () {
-    const opcao = this.dataset.opcao;
-    if (opcao) {
-      const select = document.getElementById('comunidade-select');
-      if (select) {
-        select.value = opcao;
-      }
-    }
-  });
-});

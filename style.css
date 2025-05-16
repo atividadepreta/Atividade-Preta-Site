@@ -832,7 +832,7 @@ button {
   border: none;
 }
 
-.formulario {
+.formulario, .formulario-opcao-aliado, .formulario-opcao-aliante {
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -861,7 +861,7 @@ button {
 }
 
 .formulario input,
-.formulario select {
+.formulario select, .formulario-opcao-aliado input, .formulario-opcao-aliado select, .formulario-opcao-aliante input, .formulario-opcao-aliante select {
   font-family: 'Inconsolata', sans-serif;
   padding: 0px 9px;
   font-size: 12px;
