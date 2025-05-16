@@ -2536,7 +2536,6 @@ header nav.nav-mobile ul li {
 
   .links-sobre-1, 
   .links-sobre-2 {
-    height: 600px; /* Altura total para os grupos de links */
     flex-direction: column;
     gap: 20px;
     margin-top: 30px;
