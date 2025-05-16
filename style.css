@@ -1741,6 +1741,10 @@ header nav.nav-mobile ul li {
   text-decoration-thickness: 1px; /* espessura mais fina */
 }
 
+.section-final-sobre {
+  height: 500px;
+}
+
 /* LINKS INDEX.HTML */
 
 .logo-links {
