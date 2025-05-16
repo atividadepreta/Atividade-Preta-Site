@@ -1374,7 +1374,7 @@ a {
   font-size: 14px;
 }
 
-.footer-content{
+.footer-content {
   padding-top: 64px;
   padding-bottom: 50px;
 }
@@ -2274,6 +2274,12 @@ header nav.nav-mobile ul li {
     gap: 15px;
     margin-top: 15px;
   }
+
+  .footer-content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
 
   footer {
     padding: 30px 5%;
