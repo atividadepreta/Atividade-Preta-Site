@@ -1902,6 +1902,7 @@ header nav.nav-mobile ul li {
   /* SECTION 1 */
   .apresentacao-section-1 {
     flex-direction: column-reverse;
+    padding-left: 40px;
 
   }
 
