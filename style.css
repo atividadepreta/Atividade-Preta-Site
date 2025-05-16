@@ -2711,4 +2711,17 @@ header nav.nav-mobile ul li {
     padding: 0px 0px 0px 0px;
   }
 
+  .sobre-main {
+    width: 742px;
+    margin: 0 auto;
+  }
+
+  .section-sobre {
+    width: 722px;
+    margin: 0 auto;
+    padding-top: 110px;
+  }
+  .titulo-sobre {
+    text-align: center;
+  }
 }
