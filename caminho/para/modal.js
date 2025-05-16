@@ -236,8 +236,16 @@ function fecharModal(modal) {
 
 let dadosEstados = [];
 
-fetch('estados-cidades.json')
-  .then(res => res.json())
+function carregarJSON(caminho) {
+  return fetch(caminho)
+    .then(res => {
+      if (!res.ok) throw new Error(`Erro ao carregar ${caminho}`);
+      return res.json();
+    });
+}
+
+carregarJSON('estados-cidades.json')
+  .catch(() => carregarJSON('../estados-cidades.json'))
   .then(data => {
     dadosEstados = data.estados;
 
@@ -256,7 +264,6 @@ fetch('estados-cidades.json')
       estadoSelect.addEventListener('change', function () {
         const siglaSelecionada = this.value;
 
-        // Pega o .cidade dentro do mesmo <form>
         const form = this.closest('form');
         const cidadeSelect = form.querySelector('.cidade');
 
@@ -265,7 +272,6 @@ fetch('estados-cidades.json')
           return;
         }
 
-        // Limpa e desabilita
         cidadeSelect.innerHTML = '<option value="" selected disabled hidden>SELECIONE UMA CIDADE</option>';
         cidadeSelect.disabled = true;
 
@@ -283,7 +289,11 @@ fetch('estados-cidades.json')
         }
       });
     });
+  })
+  .catch(erro => {
+    console.error('Erro ao carregar estados e cidades:', erro);
   });
+
 
 
  
