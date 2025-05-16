@@ -33,7 +33,7 @@ header {
 main {
   margin-top: 60px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1440px;
 }
 
 .sobre-main {
@@ -59,6 +59,7 @@ main {
   height: 100vh;
 }
 body {
+  font-family: "Questrial", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: 0 auto;
@@ -203,7 +204,7 @@ nav a {
   flex-direction: row;
   width: 100%;
   padding-right: 40px;
-  padding-left: 40px;
+
 }
 
 
