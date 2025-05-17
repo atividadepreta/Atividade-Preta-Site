@@ -1390,7 +1390,7 @@ footer {
   font-family: "Inconsolata", monospace;
   letter-spacing: 0%;
   line-height: 24px;
-  height: 304px;
+  height: 374px;
   width: 100%;
   background-color: #303030;
   color: #DED6CF;
@@ -1832,6 +1832,10 @@ header nav.nav-mobile ul li {
 
   width: 28px;
   text-align: center;
+}
+
+.section-sobre-final {
+  height: 700px;
 }
 
 .footer-logo-links {
@@ -2510,16 +2514,17 @@ header nav.nav-mobile ul li {
 
   .section-sobre {
     width: 100%;
-    height: 3000px; /* Altura aproximada para conteúdo mobile */
+    height: 3150px; /* Altura aproximada para conteúdo mobile */
     padding: 80px 20px 40px;
     overflow: hidden; /* Prevazamento de conteúdo */
   }
 
   .titulo-sobre {
     font-size: 32px;
-    height: 93px;
+    height: 145px;
     text-align: center;
     letter-spacing: 0.2rem;
+    margin-bottom: 5px;
 
   }
 
@@ -2616,8 +2621,9 @@ header nav.nav-mobile ul li {
 
   /* Ajuste final para o último título */
   .titulo-sobre:last-child {
-    height: 80px;
+    height: 120px;
     margin-top: 50px;
+
   }
   
 
