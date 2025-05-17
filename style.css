@@ -72,7 +72,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   padding: 0 60px 0 60px;
-  gap: 60px;
+  gap: 80px;
 }
 
 .nav-sobre {
@@ -256,9 +256,11 @@ nav a {
   text-decoration-thickness: 1px; /* espessura mais fina */
   text-underline-offset: 6px; /* distância da linha até o texto */
   text-align:left ;
-  padding: 0 50px 0 50px;
+  padding-left: 106px;
+  padding-right: 27px;
 }
 .texto-2-section-1 {
+  margin-left: 47px;
   font-size: 64px; /* necessário para rem ter uma base */
 }
 
@@ -563,7 +565,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 0px 50px 0px 50px;
+  padding: 0px 87px 0px 83px;
 }
 
 .conteiner-1-section-5 {
