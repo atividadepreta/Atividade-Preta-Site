@@ -46,17 +46,19 @@ main {
 .sobre-body {
   background-image: url('src/img/testefundo.png');
   background-size: cover; 
-
+  
 }
 .links-body {
   background-image: url('src/img/fundo-links.png');
   background-size: cover; 
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+
 }
 body {
   font-family: "Questrial", sans-serif;
@@ -86,6 +88,7 @@ nav a {
   font-size: 20px;
   letter-spacing: 0.10em; /* melhor usar em vez de % */
   font-weight: 400;
+  white-space: nowrap;
 }
 
 /* Seções principais */
@@ -1390,7 +1393,7 @@ footer {
   font-family: "Inconsolata", monospace;
   letter-spacing: 0%;
   line-height: 24px;
-  height: 374px;
+  height: 354px;
   width: 100%;
   background-color: #303030;
   color: #DED6CF;
@@ -1479,11 +1482,13 @@ footer {
 .menu-mobile .nav-mobile ul li.linkmobile {
   padding: 20px;
   display: block;
+  white-space: nowrap;
 
 }
 .menu-mobile nav ul li a:hover{
   background-color: rgba(62, 108, 108, 0.768);
   color: #03050c;
+  white-space: nowrap;
 }
 .menu-mobile .btn-fechar i{
   color: rgba(62, 108, 108, 0.768);
@@ -1503,7 +1508,7 @@ header nav.nav-mobile ul li {
 .nav-mobile {
   display: flex;
   flex-direction: column;
-
+  white-space: nowrap;
 
 }
 .overlay-menu {
@@ -1659,6 +1664,33 @@ header nav.nav-mobile ul li {
   font-family: 'Inconsolata', monospace;
 }
 
+.lista-sobre {
+  list-style: none;
+  padding-left: 0;
+  gap: 20px;
+}
+
+
+.lista-sobre li {
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0;
+  position: relative;
+  padding-left: 12px; /* espaço para a nova bolinha */
+  padding-bottom: 5px;
+}
+
+.lista-sobre li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px; /* ajusta a altura da bolinha */
+  width: 3px;  /* tamanho da bolinha */
+  height: 3px;
+  background-color: #333; /* cor da bolinha */
+  border-radius: 50%;
+}
+
 .paragrafo-sobre {
   width: 100%;
   font-size: 20px;
@@ -1673,7 +1705,8 @@ header nav.nav-mobile ul li {
 }
 
 .paragrafo-na-esquerda ul {
-  padding-left: 20px;
+  padding-left: 7px;
+
 }
 
 .paragrafo-sobre-esquerda {
@@ -1756,7 +1789,7 @@ header nav.nav-mobile ul li {
 /* LINKS INDEX.HTML */
 
 .logo-links {
-  margin-top: 10px;
+  margin-top: 33px;
   margin-bottom: 20px;
 
 }
@@ -1796,6 +1829,7 @@ header nav.nav-mobile ul li {
   margin-bottom: 30px;
 }
 .link-btn {
+  
   position: relative;
   display: block;
   text-align: center;
@@ -1835,16 +1869,16 @@ header nav.nav-mobile ul li {
 }
 
 .section-sobre-final {
-  height: 700px;
+  height: 200px;
 }
 
 .footer-logo-links {
   margin-top: 4px;
-  color: #35322f;
+  color: rgba(0, 0, 0, 1);
   font-size: 1.1rem;
   letter-spacing: 2px;
   font-family: 'Montserrat', sans-serif;
-  opacity: 0.7;
+
 }
 
 #navd-nos {
@@ -1853,6 +1887,11 @@ header nav.nav-mobile ul li {
   text-underline-offset: 4px; /* distância da linha até o texto */
   
 }
+
+#navd-para-margin{
+  white-space: nowrap;
+}
+
 
 
 @media screen and (max-width: 767px) {
@@ -2306,7 +2345,7 @@ header nav.nav-mobile ul li {
   
 
   footer {
-    padding: 30px 5%;
+    padding: 45px 10px 10px 10px;
     text-align: center;
   }
 
@@ -2543,6 +2582,10 @@ header nav.nav-mobile ul li {
 
   }
 
+  .paragrafo-sobre-esquerda {
+    margin-bottom: 10px;
+  }
+
   .video-sobre {
     position: relative;
     width: 100%;
@@ -2626,8 +2669,115 @@ header nav.nav-mobile ul li {
 
   }
   
+  .section-sobre-final {
+    height: 700px;
+  }
+
+  .links-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .links-body {
+    justify-content: flex-start;
+  
+  }
 
 }
+
+@media screen and (max-width: 375px) {
+  .links-body {
+    padding: 0 16px 16px 16px;
+    font-size: 14px;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .logo-links img {
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .titulo-links {
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .subtitulo-links {
+    font-size: 14px;
+ 
+    margin-bottom: 10px;
+  }
+
+  .desc {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .desc .br-desktop {
+    display: none; /* quebra de linha desativada em telas pequenas */
+  }
+
+  .links-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .link-btn {
+    max-width: 300px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    padding-left: 40px;
+    background: #35322f;
+    color: rgba(222, 214, 207, 1);
+    border: none;
+    padding: 18px 24px;
+    font-size: 1rem;
+    font-family: 'inconsolata', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px rgba(48, 48, 48, 0.4);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .link-btn .icon svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  .link-btn:hover {
+    background-color: #cfc7c0;
+  }
+
+  .footer-logo-links {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo-links svg {
+    width: 20px;
+    height: auto;
+    opacity: 0.9;
+  }
+}
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /* HEADER */
@@ -2856,4 +3006,6 @@ header nav.nav-mobile ul li {
   .titulo-sobre {
     text-align: center;
   }
+
+
 }
