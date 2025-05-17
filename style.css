@@ -2651,15 +2651,16 @@ header nav.nav-mobile ul li {
   }
 
   .paragrafo-na-esquerda {
-    height: 600px;
+    height: 300px;
   }
 
   .paragrafo-na-esquerda ul {
     padding-left: 15px;
-    height: 366px;
+    height: 250px;
   }
 
   .lista-sobre li {
+    font-size: 16px;
     margin-bottom: 15px;
   }
 
