@@ -1891,9 +1891,9 @@ header nav.nav-mobile ul li {
 }
 
 #navd-nos {
-  text-decoration: underline;
-  text-decoration-thickness: 1px; /* espessura mais fina */
-  text-underline-offset: 4px; /* distância da linha até o texto */
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important; /* espessura mais fina */
+  text-underline-offset: 4px !important; /* distância da linha até o texto */
   
 }
 
