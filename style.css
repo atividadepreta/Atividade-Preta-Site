@@ -1926,7 +1926,11 @@ header nav.nav-mobile ul li {
     justify-content: center;
     margin: 0 auto;
   }
-
+  
+  /*.main-links {
+    min-height: 100vh;
+  }
+  */
   #svg-desk-none {
     display: block;
   }
@@ -2714,6 +2718,7 @@ header nav.nav-mobile ul li {
 
   .links-body {
     justify-content: flex-start;
+    min-height: 100vh;
   
   }
 
