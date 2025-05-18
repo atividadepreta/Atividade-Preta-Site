@@ -2670,7 +2670,7 @@ header nav.nav-mobile ul li {
 
   .paragrafo-na-esquerda ul {
     padding-left: 15px;
-    height: 230px;
+    height: auto;
   }
 
   .lista-sobre li {
