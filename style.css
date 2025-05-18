@@ -1700,6 +1700,10 @@ header nav.nav-mobile ul li {
   text-align: justify;
 }
 
+#paragrafo-sobre-2 {
+  height: auto !important;
+  margin-bottom: 30px;
+}
 .paragrafo-na-esquerda {
   width: 100%;
 }
@@ -1732,6 +1736,11 @@ header nav.nav-mobile ul li {
   height: 400px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.video-sobre img {
+  width: 100%;
+  height: 100%;
 }
 
 .links-sobre-1, .links-sobre-2 {
@@ -2345,8 +2354,9 @@ header nav.nav-mobile ul li {
   
 
   footer {
-    padding: 45px 10px 10px 10px;
+    padding: 40px 10px 40px 10px !important;
     text-align: center;
+    height: auto;
   }
 
   footer p {
@@ -2355,8 +2365,12 @@ header nav.nav-mobile ul li {
   }
 
   footer .footer-logo {
-    height: 30px;
-    margin-top: 10px;
+    height: auto;
+ 
+  }
+
+  .footer-logo {
+    padding-bottom: 10px;
   }
 
   .menu-lateral {
@@ -2553,14 +2567,14 @@ header nav.nav-mobile ul li {
 
   .section-sobre {
     width: 100%;
-    height: 3339px; /* Altura aproximada para conteúdo mobile */
+    height: auto; /* Altura aproximada para conteúdo mobile */
     padding: 80px 20px 40px;
     overflow: hidden; /* Prevazamento de conteúdo */
   }
 
   .titulo-sobre {
     font-size: 32px;
-    height: 145px;
+    height: auto;
     text-align: center;
     letter-spacing: 0.2rem;
     margin-bottom: 5px;
@@ -2578,7 +2592,7 @@ header nav.nav-mobile ul li {
   }
 
   .paragrafo-sobre {
-    height: 600px;
+    height: auto;
 
   }
 
@@ -2590,7 +2604,7 @@ header nav.nav-mobile ul li {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; /* proporção 16:9 */
-    height: 0;
+    height: auto;
     overflow: hidden;
 
   }
@@ -2636,7 +2650,7 @@ header nav.nav-mobile ul li {
   }
 
   .imagem-e-rodape {
-    height: 600px;
+    height: auto;
   }
   
   .imagem-e-rodape img {
@@ -2651,18 +2665,25 @@ header nav.nav-mobile ul li {
   }
 
   .paragrafo-na-esquerda {
-    height: 300px;
+    height: auto;
   }
 
   .paragrafo-na-esquerda ul {
     padding-left: 15px;
-    height: 250px;
+    height: 230px;
   }
 
   .lista-sobre li {
     font-size: 16px;
     margin-bottom: 15px;
   }
+
+  .lista-sobre li:last-child {
+    font-size: 16px;
+    margin-bottom: 0px !important;
+  }
+
+
 
   /* Ajuste específico para SVGs */
   .primeiro-link svg,
@@ -2680,7 +2701,7 @@ header nav.nav-mobile ul li {
   }
   
   .section-sobre-final {
-    height: 700px;
+    height: auto;
   }
 
   .links-botoes {
