@@ -263,7 +263,6 @@ nav a {
   padding-right: 27px;
 }
 .texto-2-section-1 {
-
   font-size: 58px; /* necessário para rem ter uma base */
 }
 
@@ -437,6 +436,10 @@ button {
 
 .texto-1-section-3, .texto-1-section-4, .texto-1-section-5 {
   text-align: center;
+}
+
+.texto-1-section-4 h3 {
+  padding: 0 60px 0 60px;
 }
 
 .texto-1-section-6 h3 {
