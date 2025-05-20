@@ -33,7 +33,7 @@ header {
 main {
   margin-top: 60px;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1200px;
 }
 
 .sobre-main {
@@ -259,12 +259,12 @@ nav a {
   text-decoration-thickness: 1px; /* espessura mais fina */
   text-underline-offset: 6px; /* distância da linha até o texto */
   text-align:left ;
-  padding-left: 106px;
+  padding-left: 54px;
   padding-right: 27px;
 }
 .texto-2-section-1 {
-  margin-left: 47px;
-  font-size: 64px; /* necessário para rem ter uma base */
+
+  font-size: 58px; /* necessário para rem ter uma base */
 }
 
 .texto-2-section-1 h3 {
