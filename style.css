@@ -2838,7 +2838,7 @@ header nav.nav-mobile ul li {
   /* SECTION 1 */
   .apresentacao-section-1 {
     flex-direction: row;
-    padding: 6% 8%;
+ 
     gap: 20px;
   }
 
@@ -2925,7 +2925,6 @@ header nav.nav-mobile ul li {
   }
 
   .texto-1-section-3 h2 {
-
     text-align: center;
   }
 
