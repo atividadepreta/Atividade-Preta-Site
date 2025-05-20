@@ -251,7 +251,7 @@ nav a {
   font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 150%;
   margin: 5px;
   text-decoration: underline;
@@ -306,7 +306,7 @@ button {
 }
 
 .div-botao-seja-um-aliado {
-  margin-top: 30px;
+  margin-top: 80px;
   margin-bottom: 80px;
 }
 
@@ -2860,12 +2860,12 @@ header nav.nav-mobile ul li {
 
 
   .texto-1-section-1 p {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
   }
   
   .texto-2-section-1 h3 {
-    font-size: 52px;
+    font-size: 40px;
   }
 
   .texto-1-section-2 h2, .texto-1-section-3 h2, .texto-1-section-4 h2, .texto-1-section-5 h2,  .texto-1-section-5 h2, .texto-1-section-6 h2 {
