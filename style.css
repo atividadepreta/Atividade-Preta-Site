@@ -3027,6 +3027,7 @@ header nav.nav-mobile ul li {
 
   .texto-2-section-5 {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 30px;
     padding: 0px 0px 0px 0px;
@@ -3045,6 +3046,16 @@ header nav.nav-mobile ul li {
   .titulo-sobre {
     text-align: center;
   }
+  /* NAV SOBRE TAMBÉM É DA LP PRINCIPAL*/
+  .nav-sobre {
+    gap: 22px;
+  }
+
+  .nav-sobre a {
+    font-size: 18px;
+  }
+  
+  
 
 
 }
