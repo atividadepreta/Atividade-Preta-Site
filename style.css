@@ -33,7 +33,7 @@ header {
 main {
   margin-top: 60px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1440px;
 }
 
 .sobre-main {
@@ -173,7 +173,7 @@ nav a {
 .section-1 {
   position: relative;
   background-color: #DED6CFBF;
-  height: 672px;
+  height: 520px;
   margin-top: 100px;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -196,20 +196,20 @@ nav a {
 .section-4 {
   background-color: #303030BF;
   color: #DED6CF;
-  height: 710px;
+  height: 575px;
 }
 
 .section-5 {
   background-color: #ded6cf8f;
   color: #303030;
-  height: 646px;
+  height: 615px;
   padding-bottom: 80px;
 }
 
 .section-6 {
   background-color: #303030BF;
   color: #DED6CF;
-  height: 633px;
+  height: 546px;
 
 }
 
@@ -258,7 +258,7 @@ nav a {
   font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 150%;
   margin: 5px;
   text-decoration: underline;
@@ -269,8 +269,9 @@ nav a {
   padding-left: 54px;
   padding-right: 27px;
 }
+
 .texto-2-section-1 {
-  font-size: 58px; /* necessário para rem ter uma base */
+  font-size: 48px; /* necessário para rem ter uma base */
 }
 
 .texto-2-section-1 h3 {
@@ -304,7 +305,7 @@ button {
   font-size: 32px ;
 }
 .apresentacao-botao-fique-sabendo{
-  margin-top: 70px;
+  margin-top: 35px;
   height: 64px;
   width: 100%;
   display: flex;
@@ -413,7 +414,7 @@ button {
   font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 16px; /* tamanho mínimo 1rem, cresce até 32px */
+  font-size: 14px; /* tamanho mínimo 1rem, cresce até 32px */
   line-height: 24px;
   text-align: center;
 }
@@ -436,8 +437,7 @@ button {
 .texto-1-section-3 h3, .texto-1-section-4 h3, .texto-1-section-5 h3, .texto-1-section-6 h3 {
   font-family: "Inconsolata", monospace;
   font-weight: 400;
-  font-size: 24px; /* tamanho mínimo 1rem, cresce até 32px */
-  letter-spacing: -2.5%; /* melhor usar em vez de % */
+  font-size: 18px; /* tamanho mínimo 1rem, cresce até 32px */
   padding-bottom: 64px;
 }
 
@@ -450,7 +450,7 @@ button {
 }
 
 .texto-1-section-6 h3 {
-  padding: 28px 60px;
+  padding: 15px 60px;
   line-height: 1.6;
 }
 
@@ -531,7 +531,7 @@ button {
 .text-light {
   margin-top: 8px;
   font-weight: 300 !important;
-  font-size: 10px !important;
+  font-size: 12px !important;
 
 
 }
@@ -621,7 +621,7 @@ button {
   transform: translateY(-50%);
   background-color: #2b2b2b;
   width: 40px; /* largura fixa */
-  height: 270px; /* altura fixa */
+  height: 306px; /* altura fixa */
   padding: 20px 10px;
   border-radius: 20px 0 0 20px;
   z-index: 999;
