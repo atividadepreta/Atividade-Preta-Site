@@ -1873,7 +1873,7 @@ iframe, .video-sobre {
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
   gap: 16px;
   text-align: center;
-
+  cursor: pointer;
 }
 .link-btn:hover {
   background: #222;
@@ -2729,7 +2729,7 @@ iframe, .video-sobre {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 95%;
+    width: 90%;
     margin-bottom: 30px;
   }
 
