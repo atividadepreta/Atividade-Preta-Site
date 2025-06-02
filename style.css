@@ -377,7 +377,6 @@ button {
 .texto-2-section-2 {
   display: flex;
   flex-direction: row;
-  gap: 30px;
   padding-top: 36px;
 
 }
@@ -622,8 +621,8 @@ button {
   transform: translateY(-50%);
   background-color: #2b2b2b;
   width: 40px; /* largura fixa */
-  height: 306px; /* altura fixa */
-  padding: 20px 10px;
+  height: 243px; /* altura fixa */
+  padding: 12px 10px;
   border-radius: 20px 0 0 20px;
   z-index: 999;
   display: flex;
@@ -643,7 +642,7 @@ button {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
 }
 
