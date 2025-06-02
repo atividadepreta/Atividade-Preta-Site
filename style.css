@@ -173,8 +173,8 @@ nav a {
 .section-1 {
   position: relative;
   background-color: #DED6CFBF;
-  height: 520px;
-  margin-top: 100px;
+  height: 524px;
+  margin-top: 144px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -266,12 +266,13 @@ nav a {
   text-decoration-thickness: 1px; /* espessura mais fina */
   text-underline-offset: 6px; /* distância da linha até o texto */
   text-align:left ;
-  padding-left: 227px;
+  padding-left: 211px;
   padding-right: 0px;
 }
 
 .texto-2-section-1 {
   font-size: 48px; /* necessário para rem ter uma base */
+  margin-left: 41px;
 }
 
 .texto-2-section-1 h3 {
