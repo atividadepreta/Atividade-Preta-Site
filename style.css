@@ -2941,8 +2941,8 @@ header nav.nav-mobile ul li {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 6%;
-    height: 70px;
+    padding: 0px 0%;
+    height: 80px;
   }
 
   nav {
@@ -2971,17 +2971,23 @@ header nav.nav-mobile ul li {
   }
 
   .section-1 {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 
-
+  .texto-1-section-1 {
+    padding-left: 20px;
+  }
   .texto-1-section-1 p {
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
+  
   }
   
   .texto-2-section-1 h3 {
     font-size: 40px;
+  }
+  .texto-2-section-1 {
+    margin-left: 0;
   }
 
   .texto-1-section-2 h2, .texto-1-section-3 h2, .texto-1-section-4 h2, .texto-1-section-5 h2,  .texto-1-section-5 h2, .texto-1-section-6 h2 {
@@ -3032,6 +3038,7 @@ header nav.nav-mobile ul li {
   .texto-2-section-2 {
     flex-direction: column;
     padding: 0 8%;
+    gap: 30px;
 
   }
 
@@ -3164,12 +3171,16 @@ header nav.nav-mobile ul li {
   /* NAV SOBRE TAMBÉM É DA LP PRINCIPAL*/
   .nav-sobre {
     gap: 22px;
+    padding: 5px;
   }
 
   .nav-sobre a {
     font-size: 18px;
   }
   
+  .menudocelular {
+    display: block;
+  }
   
 
 
