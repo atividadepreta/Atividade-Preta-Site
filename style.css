@@ -401,7 +401,7 @@ button {
 }
 
 .conteiner-1-section-2 h4, .conteiner-2-section-2 h4, .bloco-1-conteiner-1 h4, .bloco-2-conteiner-1 h4, .bloco-3-conteiner-1 h4, .bloco-1-conteiner-2 h4, .bloco-2-conteiner-2 h4, .bloco-1-conteiner-1-section-4 h4, .bloco-2-conteiner-1-section-4 h4, .bloco-3-conteiner-1-section-4 h4, .bloco-1-conteiner-1-section-5 h4, .bloco-2-conteiner-1-section-5 h4, .bloco-3-conteiner-1-section-5 h4 {
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Questrial", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -598,7 +598,7 @@ button {
 .sublinhado {
   text-decoration: underline;
   text-underline-offset: 6px; /* diatancia entre texto e underline*/
-  text-decoration-thickness: 2px; /* espessura mais fina */
+  text-decoration-thickness: 1px; /* espessura mais fina */
 }
 
 .image-footer {
