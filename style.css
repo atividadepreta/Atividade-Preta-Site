@@ -1649,9 +1649,11 @@ header nav.nav-mobile ul li {
   margin: 0 auto;
   color: rgba(48, 48, 48, 1);
   position: relative;
-  height: 3070px;
+  height: auto;
+/*  height: 3150px; */
   padding-top: 144px;
   padding-bottom: 80px;
+  margin-bottom: 70px;
 
 
 }
@@ -1752,6 +1754,10 @@ header nav.nav-mobile ul li {
 .video-sobre img {
   width: 100%;
   height: 100%;
+}
+
+iframe, .video-sobre {
+  display: none;
 }
 
 .links-sobre-1, .links-sobre-2 {
