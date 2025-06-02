@@ -26,7 +26,7 @@ header {
   align-items: center;
   justify-content: center;
   z-index: 99;
-  padding: 0 60px 0 60px;
+  padding: 0;
 }
 
 /* Espaço reservado após o header */
@@ -1645,7 +1645,7 @@ header nav.nav-mobile ul li {
 /* SOBRE INDEX.HTML */
 
 .section-sobre {
-  width: 1440px;
+  width: 1270px;
   margin: 0 auto;
   color: rgba(48, 48, 48, 1);
   position: relative;
