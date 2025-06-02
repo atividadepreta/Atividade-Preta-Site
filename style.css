@@ -1921,12 +1921,13 @@ header nav.nav-mobile ul li {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    height: 60px;
+    height: 78px;
   }
 
   nav {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 8px;
     font-size: 0.7rem;
   }
@@ -1964,7 +1965,7 @@ header nav.nav-mobile ul li {
   }
 
   .section-1 {
-    margin-top: 60px;
+    margin-top: 80px;
     padding-top: 10px;
   }
 
@@ -1986,7 +1987,7 @@ header nav.nav-mobile ul li {
   /* SECTION 1 */
   .apresentacao-section-1 {
     flex-direction: column-reverse;
-    padding-left: 40px;
+
 
   }
 
@@ -2054,6 +2055,7 @@ header nav.nav-mobile ul li {
   .texto-2-section-2 {
     flex-direction: column;
     padding-top: 0px;
+    gap: 30px;
 
   }
 
