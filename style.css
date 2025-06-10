@@ -1936,6 +1936,7 @@ iframe, .video-sobre {
     justify-content: center;
     gap: 8px;
     font-size: 0.7rem;
+    width: 100%;
   }
 
   main {   
