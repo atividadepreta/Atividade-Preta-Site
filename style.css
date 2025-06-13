@@ -1768,6 +1768,19 @@ iframe, .video-sobre {
   gap: 20px;
 }
 
+.primeiro-link {
+  justify-content: start;
+}
+
+.segundo-link {
+  justify-content: center;
+
+}
+
+.terceiro-link {
+  justify-content: end;
+}
+
 .primeiro-link a, .segundo-link a, .terceiro-link a {
   font-size: 20px;
   font-weight: 400;
